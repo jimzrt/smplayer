@@ -851,9 +851,9 @@ void PrefInterface::createHelp() {
 #endif
 
 	setWhatsThis(precise_seeking_check, tr("Precise seeking"),
-		tr("If this option is checked, seeks are more accurate but they can be a little bit slower. "
-           "Note: this option only affects the slider behavior, it doesn't affect the seeking "
-           "by clicking on the waveform.") );
+	tr("If this option is enabled, seeks are more accurate but they "
+		"can be a little bit slower. May not work with some video formats.") +"<br>"+
+	tr("Note: this option only works when using mpv as multimedia engine.") );
 
 	setWhatsThis(enable_pressed_speed_check, tr("Enable pressed speed"),
 		tr("If this option is checked, the playback speed will be changed when the left mouse button is pressed on the video window.") );
